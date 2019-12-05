@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Game based on Geolocation">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KnowGeo</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+
+    <div id="app">
+        <div class="main-wrapper light">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand h2 text-primary" href="#">KnowGeo</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+
+                            <!-- instagram -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://instagram.com/redehubng">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.7"
+                                            d="M20.947 8.305C20.9369 7.54763 20.7951 6.79778 20.528 6.089C20.2964 5.49115 19.9425 4.9482 19.4892 4.49483C19.0358 4.04147 18.4929 3.68765 17.895 3.456C17.1953 3.19336 16.4562 3.05134 15.709 3.036C14.747 2.993 14.442 2.981 12 2.981C9.55801 2.981 9.24501 2.981 8.29001 3.036C7.54317 3.05146 6.80436 3.19347 6.10501 3.456C5.50707 3.68749 4.96403 4.04125 4.51064 4.49464C4.05725 4.94802 3.7035 5.49106 3.47201 6.089C3.20884 6.78814 3.06713 7.52711 3.05301 8.274C3.01001 9.237 2.99701 9.542 2.99701 11.984C2.99701 14.426 2.99701 14.738 3.05301 15.694C3.06801 16.442 3.20901 17.18 3.47201 17.881C3.70389 18.4788 4.05791 19.0216 4.51145 19.4748C4.96499 19.928 5.50807 20.2816 6.10601 20.513C6.80344 20.7862 7.54238 20.9384 8.29101 20.963C9.25401 21.006 9.55901 21.019 12.001 21.019C14.443 21.019 14.756 21.019 15.711 20.963C16.4582 20.9483 17.1974 20.8066 17.897 20.544C18.4947 20.3121 19.0375 19.9582 19.4909 19.5048C19.9442 19.0515 20.2981 18.5087 20.53 17.911C20.793 17.211 20.934 16.473 20.949 15.724C20.992 14.762 21.005 14.457 21.005 12.014C21.003 9.572 21.003 9.262 20.947 8.305ZM11.994 16.602C9.44001 16.602 7.37101 14.533 7.37101 11.979C7.37101 9.425 9.44001 7.356 11.994 7.356C13.2201 7.356 14.396 7.84307 15.263 8.71005C16.1299 9.57703 16.617 10.7529 16.617 11.979C16.617 13.2051 16.1299 14.381 15.263 15.248C14.396 16.1149 13.2201 16.602 11.994 16.602ZM16.801 8.263C16.204 8.263 15.723 7.781 15.723 7.185C15.723 7.0435 15.7509 6.90339 15.805 6.77266C15.8592 6.64193 15.9385 6.52315 16.0386 6.4231C16.1387 6.32304 16.2574 6.24367 16.3882 6.18952C16.5189 6.13537 16.659 6.1075 16.8005 6.1075C16.942 6.1075 17.0821 6.13537 17.2129 6.18952C17.3436 6.24367 17.4624 6.32304 17.5624 6.4231C17.6625 6.52315 17.7418 6.64193 17.796 6.77266C17.8501 6.90339 17.878 7.0435 17.878 7.185C17.878 7.781 17.396 8.263 16.801 8.263Z" />
+                                        <path opacity="0.7"
+                                            d="M11.994 14.982C13.6525 14.982 14.997 13.6375 14.997 11.979C14.997 10.3205 13.6525 8.976 11.994 8.976C10.3355 8.976 8.99103 10.3205 8.99103 11.979C8.99103 13.6375 10.3355 14.982 11.994 14.982Z" />
+                                    </svg>
+
+                                </a>
+                            </li>
+
+                            <!-- facebook -->
+                            <li class="nav-item">
+                                <a href="https://facebook.com/redehubng" class="nav-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.7"
+                                            d="M12.001 2.002C6.47901 2.002 2.00201 6.479 2.00201 12.001C2.00201 16.991 5.65801 21.127 10.439 21.88V14.892H7.89901V12.001H10.439V9.798C10.439 7.29 11.932 5.907 14.215 5.907C15.309 5.907 16.455 6.102 16.455 6.102V8.561H15.191C13.951 8.561 13.563 9.333 13.563 10.124V11.999H16.334L15.891 14.89H13.563V21.878C18.344 21.129 22 16.992 22 12.001C22 6.479 17.523 2.002 12.001 2.002Z" />
+                                    </svg>
+
+                                </a>
+                            </li>
+                            <!-- twitter -->
+                            <li class="nav-item">
+                                <a href="https://twitter.com/redehubng" class="nav-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.7"
+                                            d="M12 0.479996C5.63758 0.479996 0.47998 5.6376 0.47998 12C0.47998 18.3624 5.63758 23.52 12 23.52C18.3624 23.52 23.52 18.3624 23.52 12C23.52 5.6376 18.3624 0.479996 12 0.479996ZM16.686 9.9168C16.6908 10.0152 16.692 10.1136 16.692 10.2096C16.692 13.2096 14.4108 16.6668 10.2372 16.6668C9.00393 16.6688 7.79634 16.3147 6.75958 15.6468C6.93598 15.6684 7.11718 15.6768 7.30078 15.6768C8.36398 15.6768 9.34198 15.3156 10.1184 14.706C9.64524 14.6967 9.18679 14.54 8.80691 14.2578C8.42704 13.9756 8.14468 13.5819 7.99918 13.1316C8.33897 13.1962 8.689 13.1827 9.02278 13.092C8.50924 12.9882 8.04742 12.7099 7.71563 12.3044C7.38384 11.8989 7.20251 11.3911 7.20238 10.8672V10.8396C7.50838 11.0088 7.85878 11.112 8.23078 11.124C7.74934 10.8035 7.40852 10.3112 7.27803 9.74776C7.14755 9.18431 7.23724 8.5923 7.52878 8.0928C8.09873 8.7936 8.80949 9.36689 9.61506 9.77557C10.4206 10.1842 11.303 10.4192 12.2052 10.4652C12.0905 9.97837 12.1399 9.46728 12.3456 9.0114C12.5513 8.55552 12.9019 8.18038 13.3429 7.94431C13.7838 7.70824 14.2904 7.62446 14.7839 7.706C15.2773 7.78754 15.73 8.02983 16.0716 8.3952C16.5794 8.29473 17.0664 8.10846 17.5116 7.8444C17.3423 8.37016 16.988 8.81661 16.5144 9.1008C16.9642 9.04662 17.4034 8.92569 17.8176 8.742C17.5134 9.19787 17.1301 9.59572 16.686 9.9168Z" />
+                                    </svg>
+
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </nav>
+
+            <div class="inner-wrapper question ">
+                <div class="container">
+                    <!-- progress bar -->
+                    <div class="row align-items-center">
+                        <div class="col-1">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z" fill="#828282" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-10">
+                            <div class="progress" style="height: 1px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-1">
+                            <span class="small">1</span>
+                            <span class="text-primary">/25</span>
+                        </div>
+                    </div>
+
+                    <!-- question -->
+                    <div class="question-box">
+                        <h4 class="question-heading">Question</h4>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <!-- question -->
+                                <p class="question-text">
+                                    How many local government are in kaduna state?
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <!-- answers -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="question-option">
+                                            36
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="question-option">
+                                            36
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="question-option">
+                                            36
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="question-option">
+                                            36
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="question-control">
+                <div class="container">
+                    <div class="control">
+                        <a href="#" class="skip btn-control btn">skip</a>
+                        <a href="#" class="check btn-control btn">check</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
